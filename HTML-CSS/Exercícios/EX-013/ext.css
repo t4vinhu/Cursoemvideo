@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Regra de compatibilidade com caracteres acentuados. */
+
+body{
+    background-color: lightblue;
+}
+h1{
+    color: mediumblue;
+    background-color: aliceblue;
+}
+h2{
+    color: red;
+}

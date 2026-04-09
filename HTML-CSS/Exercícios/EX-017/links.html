@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(58, 46, 137);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:active{
+            color: rgb(80, 0, 80);
+        }
+
+        /* Pseudo-elementos: Representados por ::, insere conteúdo apenas pelo CSS */
+        a::after{
+            content: ' \2693;';
+            color: black;
+            font-size: .50em;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalização de links</h1>
+    <ul type="square">
+        <li><a target="_blank" rel="external" href="https://github.com/t4vinhu">Repositório do GitHub</a></li>
+        <li><a target="_blank" rel="external" href="https://www.youtube.com/@T4vinhu">Canal do Youtube</a></li>
+        <li><a target="_blank" rel="external" href="https://www.instagram.com/guug_ofc/">Perfil do Instagram</a></li>
+    </ul>
+</body>
+</html>

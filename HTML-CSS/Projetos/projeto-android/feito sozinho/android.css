@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@font-face{
+    font-family: 'Idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+
+/* Regras globais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aaffd7;
+}
+a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* Regras gerais */
+
+header{
+    background-image: linear-gradient(to bottom, #52b788, #1b4332);
+    padding-top: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.408);
+}
+header h1, header p{
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.429);
+}
+header h1{
+    font-family: "Saira Stencil One", cursive;
+}
+nav{
+    background-color: #225340;
+    padding: 5px;
+}
+nav a{
+    color: white;
+    margin: 0px 7px;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: white;
+    color: #1b4332;
+    transition-duration: 0.325s;
+}
+/* Cabeçalho + Menu */
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 825px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.414);
+}
+main h1, main h2{
+    font-family: 'Idroid', cursive;
+}
+h2#principal{
+    background-image: none;
+    font-size: 1.6em;
+}
+main h2{
+    color: #52b788;
+    background-image: linear-gradient(to right, #52b7886c, white);
+    padding: 0px 6px;
+}
+main img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+img.pq{
+    max-width: 55%;
+}
+main p{
+    margin: 15px 0px;
+    line-height: 1.2em;
+    text-align: justify;
+    text-indent: 30px;
+}
+main strong{
+    color: #225340;
+}
+main a{
+    color: #aaffd7;
+    background-color: #1b4332;
+    border-radius: 2px;
+    padding: 2px;
+}
+main a:hover{
+    color: #225340;
+    border: 1px solid #225340;
+    background-color: white;
+    transition-duration: .325s;
+    
+}
+div.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #225340;
+    margin: 0px;
+    padding: 20px;
+}
+/* Principal */
+
+aside{
+    background-color: #aaffd7;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+aside p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+h3{
+    margin-top: 20px;
+    background-color: #1b4332;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ul{
+    columns: 2;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Periférico */
+
+footer{
+    text-align: center;
+    margin-top: 35px;
+    background-color: #1b4332;
+    padding: 10px;
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+}

@@ -1,5 +1,170 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+
+/* 
+ Variáveis em CSS
+*/
+:root{
+    --cor5: #c5ebd6;
+    --cor4: #83e1ad;
+    --cor3: #3ddc84;
+    --cor2: #2fa866;
+    --cor1: #1a5c37;
+    --cor0: #063b1e;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
-    background-color: #c5ebd6;
+    background-color: var(--cor5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a.externo::after{
+    content: '\1F517';
+    font-size: .7em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor0));
+    min-height: 150px;
+    text-align: center;
+    padding: 30px;
+}
+header h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+}
+header p{
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+nav{
+    background-color: var(--cor0);
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.36);
+}
+nav a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    transition-duration: .325s;
+}
+
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.36);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1{
+    font-family: 'Idroid', cursive;
+    color: var(--cor1);
+}
+main h2{
+    font-family: 'Idroid', cursive;
+    color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+main img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+img.pq{
+    max-width: 350px;
+}
+main strong{
+    color: var(--cor1);
+    font-weight: bold;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    padding: 2px 4px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+    
+}
+div.video{
+    background-color: var(--cor0);
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.377);
+}
+aside h3{
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    /* Margem com valor negativo = crescer 'pra fora' */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        iframe{
+            width: 96vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, amet quo maxime quam nisi aut ea quibusdam nostrum odit vitae, quas nulla fugit fugiat vero tempore optio aliquid consequatur doloribus?</p>
+    <h4>Escolha uma das páginas:</h4>
+    <ul>
+        <li><a target="tela" href="pags extras/pag01.html">Página 1</a></li>
+        <li><a target="tela" href="pags extras/pag02.html">Página 2</a></li>
+        <li><a target="tela" href="pags extras/pag03.html">Página 3</a></li>
+    </ul>
+    <!-- srcdoc: parâmetro que permite escrever código dentro do iframe -->
+    <iframe name="tela" srcdoc="<h1>Escolha uma das opções acima.</h1>">
+        <!-- O iframe precisa de um nome para funcionar com o parâmetro target -->
+        Seu navegador não é compatível com isso.
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates aperiam vitae voluptate illum eum eaque vero sequi cupiditate exercitationem architecto quaerat, veritatis quod voluptas aut facilis cum itaque deleniti sapiente? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, voluptas corrupti? Maxime modi ipsam nisi, voluptate eos dignissimos consectetur tenetur consequuntur sed numquam in sit voluptatem dolore delectus eum exercitationem?</p>
+</body>
+</html>

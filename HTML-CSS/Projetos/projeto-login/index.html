@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/medias.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+            <div id="formu">
+                <h1>Login</h1>
+                <p>Seja bem-vindo, já conhecemos você?</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">login</span>
+                        <input type="email" name="log" id="ilog" placeholder="Seu E-mail" autocomplete="email" required>
+                        <label for="ilog">Login:</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">password</span>
+                        <input type="password" name="sen" id="isen" placeholder="Sua senha" autocomplete="current-password" required minlength="8">
+                        <label for="isen">Senha:</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a class="botao" href="esqueci.html">
+                        Esqueci a senha <span class="material-symbols-outlined">password_2_off</span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

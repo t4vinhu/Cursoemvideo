@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.cont{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: darkblue;
+        }
+       
+        div.item{
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            text-align: center;
+            text-transform: capitalize;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div id="i1" class="item">a</div>
+        <div id="i2" class="item">outro conteúdo</div>
+        <div id="i3" class="item">c</div>
+        <div id="i4" class="item">conteúdo levemente maior</div>
+        <div id="i5" class="item">e</div>
+        <div id="i6" class="item">conteúdo maior ainda que ocupa mais espaço</div>
+        <div id="i7" class="item">g</div>
+    </div>
+</body>
+</html>

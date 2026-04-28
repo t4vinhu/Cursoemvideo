@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.cont{
+            display: flex;
+            background-color: darkblue;
+        }
+        /* display: flex; sempre deve ser configurado no container */
+        div.item{
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            text-align: center;
+            text-transform: capitalize;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div id="i1" class="item">a</div>
+        <div id="i2" class="item">b</div>
+        <div id="i3" class="item">c</div>
+        <div id="i4" class="item">d</div>
+        <div id="i5" class="item">e</div>
+        <div id="i6" class="item">f</div>
+        <div id="i7" class="item">g</div>
+    </div>
+</body>
+</html>

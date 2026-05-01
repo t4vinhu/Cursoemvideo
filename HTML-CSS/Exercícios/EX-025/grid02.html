@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.cont{
+            border: 3px solid blue;
+            display: grid;
+            grid-template: repeat(3, auto) / repeat(3, auto);
+            /*
+            grid-template: shorthand para grid-template-rows/columns
+            repeat: função para repetir valores
+            */
+            gap: 10px;
+            place-items: normal center;
+            place-content: space-between space-evenly;
+            /* 
+            place-items: shorthand para align/justify-items
+            place-content: shorthand para align/justify-content
+            */
+            height: 250px;
+        }
+        div.item{
+            border: 2px dashed red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div.cont{
+    border: 2px dashed black;
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+div.item{
+    border: 1px dashed rgb(115, 0, 0);
+}
+
+#c1{
+    background-color: rgb(255, 100, 100);
+    grid-row: 1 / 2;
+    grid-column: 1 / span 4;
+    /*
+    Shorthands para start e end
+    span = expansão
+    */
+}
+#c2{
+    background-color: rgb(100, 255, 100);
+    grid-area: 2 / 1 / -1 / span 2;
+    /* shorthand para row-start, column-start, row-end e column-end */
+}
+#c3{
+    background-color: rgb(100, 100, 255);
+    grid-row: 2 / span 2;
+    grid-column: 3 / -1;
+}

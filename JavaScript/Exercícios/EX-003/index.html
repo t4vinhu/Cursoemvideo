@@ -20,13 +20,23 @@
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum enim praesentium ad odit. Tempora eius architecto natus rem sed doloribus, dolorem, velit tempore sint pariatur suscipit totam. Eligendi, ullam totam!</p>
     <script>
         var n1 = Number(window.prompt('Digite um número:')) 
-        // Number(n) converte a variável para o tipo number
-        // n.toString() ou String(n) converte para string
         var n2 = Number(window.prompt('Digite outro número:'))
         var s = n1 + n2
         window.alert(`A soma dos termos ${n1} e ${n2} é ${s}.`)
-        // number + number = soma
-        // string + string = concatenação
+        /*
+            Para fazer com que + faça operações de soma, é preciso com que as duas variáveis a serem somadas sejam do tipo number, para isso é preciso convertê-las:
+            Number.parseFloat(n): decimais
+            Number.parseInt(n): inteiros
+            ou simplesmete Number(n)
+
+            Conversão number -> string:
+            String(n)
+            n.toString()
+
+            Template strings:
+            Permite formatar variáveis em uma só linha
+            `A frase é escrita entre crases enquanto todo ${} guarda a variável.`
+        */
     </script>
 </body>
 </html>
